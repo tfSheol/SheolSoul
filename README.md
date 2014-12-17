@@ -1,2 +1,2 @@
 # SheolSoul
-Netsoul Like
+Netsoul Like for Windows
