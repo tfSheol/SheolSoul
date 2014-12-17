@@ -2,18 +2,20 @@ CC 		= g++
 
 RM 		= rm -rf
 
+PATH_SOURCES	= ./sources
+
 CPPFLAGS 	+= -Wextra -Wall -Werror -g
 CPPFLAGS 	+= -ansi -pedantic
-CPPFLAGS 	+= -I.
+CPPFLAGS 	+= -I./includes/
 
 LDFLAGS 	+= $(CPPFLAGS) -lws2_32
 
 NAME 		= SheolSoul
 
-SRCS		= main.cpp 	\
-		  MySoul.cpp	\
-		  MySocket.cpp	\
-		  md5.cpp
+SRCS		= $(PATH_SOURCES)/main.cpp	    \
+		  $(PATH_SOURCES)/MySoul.cpp	    \
+		  $(PATH_SOURCES)/MySocket.cpp	    \
+		  $(PATH_SOURCES)/md5.cpp
 
 OBJS 		= $(SRCS:.cpp=.o)
 
